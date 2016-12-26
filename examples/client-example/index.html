@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Connection-Grid-Square Example</title>
+    <meta name="description" content="Connection Grid Square Example">
+    <!-- either cdn should work -->
+    <!--
+    <script src="https://cdn.rawgit.com/mitchallen/connection-grid-square/v0.1.0/dist/connection-grid-square.min.js"></script>
+    -->
+    <script src="https://unpkg.com/@mitchallen/connection-grid-square@0.1.0/dist/connection-grid-square.min.js"></script>
+    <script>
+      var factory = window.MitchAllen.ConnectionGridSquare;
+      console.log(factory);
+      var xSize = 10, ySize = 5;
+      var sg = factory.create( { x: xSize, y: ySize } );
+      console.log(sg);
+      sg.log(); 
+    </script>
+  </head>
+  <body>
+    <h1>Connection Grid Square Example</h1>
+  </body>
+</html>
