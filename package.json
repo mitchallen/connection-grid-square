@@ -21,7 +21,7 @@
   "author": "Mitch Allen <npm@mitchallen.com> (http://mitchallen.com)",
   "license": "ISC",
   "dependencies": {
-    "@mitchallen/connection-grid-core": "^0.1.4",
+    "@mitchallen/connection-grid-core": "^0.1.6",
     "@mitchallen/grid-square": "^0.1.4"
   },
   "devDependencies": {
@@ -34,6 +34,7 @@
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-jsdoc-to-markdown": "^2.0.0",
     "grunt-shell": "^1.3.0",
     "should": "^10.0.0",
     "supertest": "^2.0.0"

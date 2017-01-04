@@ -11,6 +11,32 @@
 var gridFactory = require("@mitchallen/grid-square"),
     baseGrid = require("@mitchallen/connection-grid-core").create;
 
+/**
+ * Connection Grid Square
+ * @module connection-grid-square
+ * @augments {@link https://www.npmjs.com/package/@mitchallen/connection-grid-core @mitchallen/connection-grid-core}
+ */
+
+/**
+ * 
+ * A module for generating connection grid squares
+ * @module connection-grid-square-factory
+ */
+
+ /** 
+ * Factory method that returns a connection grid square object.
+ * It takes one spec parameter that must be an object with named parameters.
+ * @param {Object} options Named parameters for generating a connection grid square
+ * @param {number} options.x The size along the x axis
+ * @param {number} options.y The size along the y axis
+ * @returns {module:connection-grid-square}
+ * @example <caption>Creating a connection-grid-square</caption>
+ * "use strict";
+ * var gridFactory = require("@mitchallen/connection-grid-square");
+ * let xSize = 5;
+ * let ySize = 6;
+ * var grid = gridFactory.create({ x: xSize, y: ySize });
+ */
 module.exports.create = (spec) => {
 
     spec = spec || {};
@@ -43,6 +69,15 @@ module.exports.create = (spec) => {
     });
 
     Object.assign( obj, {
+        /** Returns returns neighbor for direction
+          * @param {string} dir A string representing a direction
+          * @function
+          * @instance
+          * @memberof module:connection-grid-square
+          * @returns {string}
+          * @example <caption>usage</caption>
+          * var cell = grid.getNeighbor(1,1,"S"); 
+         */
         getNeighbor: function(x, y, dir) {
             if(!this.isCell(x, y)) { return null; }
             // dir must be string and in dirmap
@@ -56,6 +91,16 @@ module.exports.create = (spec) => {
             }
             return { x: nx, y: ny };
         },
+        /** Returns returns and array of neighbors for the cell at x,y
+          * @param {number} x X cooridinate of cell
+          * @param {number} y Y cooridinate of cell
+          * @function
+          * @instance
+          * @memberof module:connection-grid-square
+          * @returns {array} 
+          * @example <caption>usage</caption>
+          * var list = grid.getNeighborDirs(1,1); 
+         */
         getNeighborDirs: function(x, y) {
             // Classic ignores x and y, but other derived classes may not
             return [ "N", "S", "E", "W" ];
