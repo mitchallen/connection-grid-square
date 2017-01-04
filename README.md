@@ -162,13 +162,14 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 
 #### Version 0.1.4
 
-* integrated jsdoc 
+* corrected version history
 
 #### Version 0.1.3
 
 * installed latest version of __@mitchallen/connection-grid-core__ 
 * updated npm scripts
 * updated client example
+* integrated jsdoc 
 
 #### Version 0.1.2
 
