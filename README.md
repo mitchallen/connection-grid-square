@@ -175,6 +175,10 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 
 ## Version History
 
+### Version 0.1.6
+
+* installed latest version of __@mitchallen/connection-grid-core__ 
+
 ### Version 0.1.5
 
 * installed latest version of __@mitchallen/connection-grid-core__ 
