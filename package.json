@@ -21,7 +21,7 @@
   "author": "Mitch Allen <npm@mitchallen.com> (http://mitchallen.com)",
   "license": "ISC",
   "dependencies": {
-    "@mitchallen/connection-grid-core": "^0.1.6",
+    "@mitchallen/connection-grid-core": "^0.1.7",
     "@mitchallen/grid-square": "^0.1.4"
   },
   "devDependencies": {
