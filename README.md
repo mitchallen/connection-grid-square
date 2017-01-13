@@ -197,6 +197,10 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 
 ## Version History
 
+### Version 0.1.8
+
+* updated to latest version of grid-square
+
 ### Version 0.1.7
 
 * integrated travis-ci and codecov.io
