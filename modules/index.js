@@ -55,10 +55,6 @@ module.exports.create = (spec) => {
         y: _y
     });
 
-    if(!_grid) {
-        return null;
-    }
-
     _grid.fill(0);
 
     var _dirMap = { 

@@ -8,7 +8,8 @@
 
 var request = require('supertest'),
     should = require('should'),
-    modulePath = "../../dist/connection-grid-square";
+    // modulePath = "../../dist/connection-grid-square";
+    modulePath = "../../modules/index";
 
 describe('Square smoke test', function() {
 
@@ -50,6 +51,18 @@ describe('Square smoke test', function() {
     it('Square method with valid x and y parameters should return object', function(done) {
         var grid = _module.create({ x: 5, y: 5 });
         should.exist(grid);
+        done();
+    });
+
+    it('Square method with negative x parameters should normalize xSize to zero', function(done) {
+        var grid = _module.create({ x: -5, y: 5 });
+        grid.xSize.should.eql(0);
+        done();
+    });
+
+    it('Square method with negative y parameters should normalize ySize to zero', function(done) {
+        var grid = _module.create({ x: 5, y: -5 });
+        grid.ySize.should.eql(0);
         done();
     });
 
@@ -203,6 +216,36 @@ describe('Square smoke test', function() {
             (cell.x >= tX - 1 && cell.x <= tX + 1).should.eql(true);
             (cell.y >= tY - 1 && cell.y <= tY + 1).should.eql(true);
         }
+        done();
+    });
+
+    it('getNeighbor for non-string direction should return null', function(done) {
+        var grid = _module.create({ x: 5, y: 5 });
+        should.exist(grid);
+        let tX = 2;
+        let tY = 3;
+        var cell = grid.getNeighbor(tX,tY,1);
+        should.not.exist(cell);
+        done();
+    });
+
+    it('getNeighbor for non-existant cell should return null', function(done) {
+        var grid = _module.create({ x: 5, y: 5 });
+        should.exist(grid);
+        let tX = -2;
+        let tY = 3;
+        var cell = grid.getNeighbor(tX,tY,"N");
+        should.not.exist(cell);
+        done();
+    });
+
+    it('getNeighbor for non-existant neighbor should return null', function(done) {
+        var grid = _module.create({ x: 1, y: 1 });
+        should.exist(grid);
+        let tX = 0;
+        let tY = 0;
+        var cell = grid.getNeighbor(tX,tY,"N");
+        should.not.exist(cell);
         done();
     });
 

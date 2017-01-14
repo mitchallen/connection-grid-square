@@ -8,7 +8,8 @@
 
 var request = require('supertest'),
     should = require('should'),
-    modulePath = "../../dist/connection-grid-square";
+    // modulePath = "../../dist/connection-grid-square";
+    modulePath = "../../modules/index";
 
 describe('Square multiple grids', function() {
 
