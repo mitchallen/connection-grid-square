@@ -56,9 +56,9 @@ You must use __npm__ __2.7.0__ or higher because of the scoped package name.
         <meta name="description" content="Connection Grid Square Example">
         <!-- either cdn should work -->
         <!--
-        <script src="https://cdn.rawgit.com/mitchallen/connection-grid-square/v0.1.0/dist/connection-grid-square.min.js"></script>
+        <script src="https://cdn.rawgit.com/mitchallen/connection-grid-square/v0.1.9/dist/connection-grid-square.min.js"></script>
         -->
-        <script src="https://unpkg.com/@mitchallen/connection-grid-square@0.1.0/dist/connection-grid-square.min.js"></script>
+        <script src="https://unpkg.com/@mitchallen/connection-grid-square@0.1.9/dist/connection-grid-square.min.js"></script>
         <script>
           var factory = window.MitchAllen.ConnectionGridSquare;
           console.log(factory);
@@ -196,6 +196,11 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 * * *
 
 ## Version History
+
+### Version 0.1.9
+
+* updated .npmignore
+* updated dependencies
 
 ### Version 0.1.8
 
