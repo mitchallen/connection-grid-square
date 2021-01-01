@@ -1,5 +1,5 @@
 /**
-    Module: @mitchallen/connection-grid-square/modules/index.js
+    Module: @mitchallen/connection-grid-square/src/index.js
     Author: Mitch Allen
 */
 

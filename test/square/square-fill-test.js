@@ -9,7 +9,7 @@
 var request = require('supertest'),
     should = require('should'),
     // modulePath = "../../dist/connection-grid-square";
-    modulePath = "../../modules/index";
+    modulePath = "../../src/index";
 
 describe('Square fill method', function() {
 
