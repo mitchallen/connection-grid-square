@@ -44,16 +44,11 @@ var gridFactory = require("@mitchallen/grid-square"),
  * let ySize = 6;
  * var grid = gridFactory.create({ x: xSize, y: ySize });
  */
-module.exports.create = (spec) => {
+module.exports.create = (spec = {}) => {
 
-    spec = spec || {};
-    let _x = spec.x || 0;
-    let _y = spec.y || 0;
+  let { x: _x = 0, y: _y = 0 } = spec;
 
-    var _grid = gridFactory.create({
-        x: _x,
-        y: _y
-    });
+    var _grid = gridFactory.create(spec);
 
     _grid.fill(0);
 
