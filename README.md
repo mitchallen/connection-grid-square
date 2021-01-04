@@ -57,7 +57,7 @@ let grid = gridFactory.create({ x: xSize, y: ySize });
         <meta charset="utf-8">
         <title>Connection-Grid-Square Example</title>
         <meta name="description" content="Connection Grid Square Example">
-        <script src="https://unpkg.com/@mitchallen/connection-grid-square@0.1.10/dist/connection-grid-square.min.js"></script>
+        <script src="https://unpkg.com/@mitchallen/connection-grid-square@0.1.13/dist/connection-grid-square.min.js"></script>
         <script>
           var factory = window.MitchAllen.ConnectionGridSquare;
           console.log(factory);
