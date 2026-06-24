@@ -14,11 +14,11 @@ Connection grid for square array
     <img src="https://codecov.io/gh/mitchallen/connection-grid-square/branch/master/graph/badge.svg" alt="Coverage Status">
   </a>
   
-  <a href="https://npmjs.org/package/@mitchallen/connection-grid-square">
-    <img src="http://img.shields.io/npm/v/@mitchallen/connection-grid-square.svg?style=flat-square" alt="Version">
+  <a href="https://github.com/mitchallen/connection-grid-square/pkgs/npm/connection-grid-square">
+    <img src="https://img.shields.io/github/v/tag/mitchallen/connection-grid-square.svg?label=version" alt="Version">
   </a>
   
-  <a href="https://npmjs.org/package/@mitchallen/connection-grid-square">
+  <a href="https://github.com/mitchallen/connection-grid-square/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/mitchallen/connection-grid-square.svg">
   </a>
   
