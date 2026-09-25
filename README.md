@@ -11,14 +11,14 @@ Connection grid for square array
   </a>
   
   <a href="https://codecov.io/gh/mitchallen/connection-grid-square">
-    <img src="https://codecov.io/gh/mitchallen/connection-grid-square/branch/master/graph/badge.svg" alt="Coverage Status">
+    <img src="https://codecov.io/gh/mitchallen/connection-grid-square/branch/main/graph/badge.svg" alt="Coverage Status">
   </a>
   
   <a href="https://github.com/mitchallen/connection-grid-square/pkgs/npm/connection-grid-square">
     <img src="https://img.shields.io/github/v/tag/mitchallen/connection-grid-square.svg?label=version" alt="Version">
   </a>
   
-  <a href="https://github.com/mitchallen/connection-grid-square/blob/master/LICENSE">
+  <a href="https://github.com/mitchallen/connection-grid-square/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/mitchallen/connection-grid-square.svg">
   </a>
   
