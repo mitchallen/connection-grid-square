@@ -1,6 +1,6 @@
 {
   "name": "@mitchallen/connection-grid-square",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "description": "Connection grid for square grids",
   "main": "src/index.js",
   "files": [
